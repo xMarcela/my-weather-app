@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Mate&family=Roboto&display=swap");
+
+body {
+    background: #fbfaf8;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.input-group {
+    width: 400px;
+    margin: 10px;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Mate";
+    font-size: 30px;
+    color: #667b96;
+}
+
+h1 {
+    font-size: 50px;
+    color: #667b96;
+}
+
+h2, h3 {
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+}
+
+.row {
+    background: #b5eecb;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+
+.date, .wDetails, #tidIdag, ul {
+    font-family: "roboto";
+    font-size: 25px;
+    color: #667b96;
+}
+
+.date, .wDetails {
+    line-height: 2, 3;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+li {
+    border: none;
+    background: #b5eecb;
+    align-self: center;
+    margin: 10px;
+    padding: 5px 10px;
+}
