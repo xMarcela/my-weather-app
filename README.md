@@ -14,3 +14,9 @@ Week 5
 
 Week 6
 * Learned GIT & GITHUB and uploaded my project.
+
+Week 7 & 8
+* Learned to build and worked with API to create a fully functional forecast
+* Implemented the API's into a working forecast
+
+https://peaceful-mcclintock-47a432.netlify.app/ 
