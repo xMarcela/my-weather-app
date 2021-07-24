@@ -14,69 +14,55 @@
 
 <body>
     <div class="container">
-        <div class="input-group rounded">
-            <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                aria-describedby="search-addon" id="wSearch" />
-            <button type="button" class="btn btn-outline-primary" id="mainButton">search</button>
-            <button type="button" class="btn btn-success" id="locationButton">Current Location</button>
-        </div>
-
-        <h1>OSLO</h1>
-        <div id="tidIdag"></div>
-        <br />
-        <div class="today">
-            <div class="row">
-                <h2>Saturday 5th June</h2>
-                <div class="col-sm">
-                    <img src="images/cloudySun.png" width="300px" alt="cloudySun" />
-                </div>
-                <div class="col-sm date">
-                    <p>Now <span class="temperature" id="currentTemp">25</span><span class="units"><a href="#"
-                                id="theCelsius-link">°C</a>|<a href="#" id="fahrenheit-link">°F</a></span>
-                        <br><br> Wind today 💨 3 m/s <br><br> Rain today ☂ 0mm
-                    </p>
-                </div>
-                <div class="col-sm wDetails">
-                    <p>Hottest today 26&deg; <br> Coldest today 22&deg; </p>
-                </div>
-            </div>
-            <br />
-            <br />
-            <div class="WeeklyWeather">
-                <h3>Weekly Weather</h3>
-                <div class="row-2">
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <input type="search" placeholder="Type a city.." class="form-control" id="city-input"
+                                autocomplete="off" />
+                        </div>
+                        <div class="col-3">
+                            <input type="submit" value="Search" class="btn btn-primary w-100" id="city-button">
+                        </div>
+                    </div>
+                </form>
+                <div class="overview">
+                    <h1 id="city"></h1>
                     <ul>
-                        <li>
-                            <h4>Sunday <br />26&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Monday <br />25&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Tuesday <br />24&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Wednesday <br />26&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Thursday <br />25&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Friday <br />26&deg;</h4>
-                        </li><br />
-                        <li>
-                            <h4>Saturday <br />26&deg;</h4>
-                        </li>
+                        <li>Last updated: <span id="date"></span></li>
+                        <li id="description"></li>
                     </ul>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="clearfix weather-temperature">
+                            <img src="" alt="" id="icon" class="float-left" />
+                            <div class="float-left"><strong id="temperature"></strong><span class="units">°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>Humidity: <span id="humidity"></span>%</li>
+                            <li>Wind: <span id="wind"></span>m/s</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <div class="weather-forecast" id="forecast">
+                </div>
+                <hr>
+                <br />
+                <div class="foot"><small><a href="https://github.com/xMarcela/my-weather-app">Open-source code</a> by A.
+                        Marcela
+                        Ravn</small></div>
+                <br>
+                <div class="hide-foot"><small><a href='https://pngtree.com/free-backgrounds'>free background photos from
+                            pngtree.com</a></small></div>
             </div>
-
-            <br />
-            <p>See full code on <a href="https://github.com/xMarcela/my-weather-app">my Github</a></p>
         </div>
-
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
